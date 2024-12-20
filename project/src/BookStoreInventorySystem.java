@@ -32,18 +32,18 @@ public class BookStoreInventorySystem {
             }
 
             if (option == 2){
-                StoreService storeService = new StoreService();
-                StoreInfo store = storeService.acceptingStoreInfo();
-
-                System.out.println("Store Information :: " + store);
-                System.out.println("-----------*****************-----------");
-            }
-
-            if(option ==3){
                 InventoryService invService = new InventoryService();
                 InventoryInfo info = invService.acceptingInventory();
 
                 System.out.println("Book Inventory Information :: " + info);
+                System.out.println("-----------*****************-----------");
+            }
+
+            if(option ==3){
+                StoreService storeService = new StoreService();
+                StoreInfo store = storeService.acceptingStoreInfo();
+
+                System.out.println("Store Information :: " + store);
                 System.out.println("-----------*****************-----------");
             }
 
